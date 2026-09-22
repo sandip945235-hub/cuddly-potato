@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
             gravity = Gravity.CENTER
         }
 
-        val hint = TextView(this).apply {
+        val hintText = TextView(this).apply {
             text = "वीडियो का लिंक नीचे डालो — MP4, MKV, WebM, HLS (.m3u8), DASH (.mpd)"
             setTextColor(Color.parseColor("#B0B0B0"))
             textSize = 13f
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
         lp.topMargin = dp(14)
 
         root.addView(title)
-        root.addView(hint)
+        root.addView(hintText)
         root.addView(input, lp)
         root.addView(playBtn, LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT).apply { topMargin = dp(18) })
 
